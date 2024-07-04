@@ -9,19 +9,18 @@
 <body>
     <div class="container">
         <h1>Cek Pahala Anda</h1>
-        <form>
+        <form id="pahala-form">
             <div class="form-group">
-                <label for="amal-baik">Jumlah Amal Baik</label>
-                <input type="number" id="amal-baik" name="amal-baik" required>
-            </div>
-            <div class="form-group">
-                <label for="amal-buruk">Jumlah Amal Buruk</label>
-                <input type="number" id="amal-buruk" name="amal-buruk" required>
+                <label for="nama">Nama Anda</label>
+                <input type="text" id="nama" name="nama" required>
             </div>
             <button type="submit">Cek</button>
         </form>
         <div class="result" id="result"></div>
     </div>
+    <footer>
+        <p>&copy; 2024 Furrr. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
