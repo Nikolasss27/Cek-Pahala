@@ -1,15 +1,8 @@
-document.querySelector('form').addEventListener('submit', function(e) {
+document.getElementById('pahala-form').addEventListener('submit', function(e) {
     e.preventDefault();
-    const amalBaik = parseInt(document.getElementById('amal-baik').value);
-    const amalBuruk = parseInt(document.getElementById('amal-buruk').value);
-    const totalPahala = amalBaik - amalBuruk;
+    const nama = document.getElementById('nama').value;
 
     const resultDiv = document.getElementById('result');
-    if (totalPahala > 0) {
-        resultDiv.textContent = `Pahala Anda: ${totalPahala}`;
-        resultDiv.style.color = 'lightgreen';
-    } else {
-        resultDiv.textContent = 'Silakan tingkatkan amal baik Anda!';
-        resultDiv.style.color = 'red';
-    }
+    resultDiv.textContent = `Hai ${nama}, teruslah berbuat baik!`;
+    resultDiv.style.color = 'lightgreen';
 });
